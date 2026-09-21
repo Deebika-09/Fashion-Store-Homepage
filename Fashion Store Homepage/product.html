@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | ZELORA Fashion Store</title>
+  <meta name="description" content="View product specifications, sizes, styling details, and customer reviews at ZELORA Fashion Store.">
+  
+  <!-- Google Fonts (Playfair Display & Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar text-center">
+    <div class="container">
+      <span>Complimentary Worldwide Express Delivery on orders over $100 &bull; Use Code: <a href="shop.html">ZELORA10</a></span>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-zelora">
+      <div class="container">
+        <!-- Logo / Brand Name -->
+        <a class="navbar-brand" href="index.html">
+          ZELORA<span class="brand-dot"></span>
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarZelora" aria-controls="navbarZelora" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2 text-dark"></i>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarZelora">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu border-0 shadow-sm rounded-3 py-2" aria-labelledby="categoriesDropdown">
+                <li><a class="dropdown-item py-2" href="shop.html?category=women">Women's Collection</a></li>
+                <li><a class="dropdown-item py-2" href="shop.html?category=men">Men's Tailoring</a></li>
+                <li><a class="dropdown-item py-2" href="shop.html?category=dresses">Designer Dresses</a></li>
+                <li><a class="dropdown-item py-2" href="shop.html?category=tops">Luxury Tops</a></li>
+                <li><a class="dropdown-item py-2" href="shop.html?category=jeans">Premium Denim</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item py-2" href="shop.html?category=accessories">Artisan Accessories</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Nav Icons: Search & Cart -->
+          <div class="d-flex align-items-center gap-2">
+            <button class="nav-icon-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navSearchCollapse" aria-expanded="false" title="Search catalog">
+              <i class="bi bi-search"></i>
+            </button>
+            <a href="cart.html" class="nav-icon-btn" title="View Bag">
+              <i class="bi bi-bag"></i>
+              <span class="cart-badge-count" style="display: none;">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Expandable Search Bar -->
+    <div class="collapse nav-search-collapse" id="navSearchCollapse">
+      <div class="container">
+        <form class="nav-search-form d-flex max-w-lg mx-auto" style="max-width: 600px;">
+          <input class="form-control rounded-pill me-2 px-4 py-2 border-secondary-subtle" type="search" placeholder="Search silk dresses, jackets, denim..." aria-label="Search">
+          <button class="btn btn-zelora rounded-pill px-4" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="bg-white py-3 border-bottom">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0 justify-content-start">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="shop.html">Shop</a></li>
+          <li class="breadcrumb-item active" id="breadcrumb-product-name" aria-current="page">Product Name</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Product Detail Section -->
+  <main class="py-5" id="product-detail-section">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Left: Product Image & Gallery -->
+        <div class="col-lg-6">
+          <div class="product-gallery-main">
+            <img id="detail-main-img" src="" alt="Product Image" onerror="this.src='https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&auto=format&fit=crop&q=80';">
+          </div>
+          <!-- Thumbnails -->
+          <div class="product-thumbnails" id="detail-thumbnails">
+            <!-- Dynamic thumbnails -->
+          </div>
+        </div>
+
+        <!-- Right: Product Info & Actions -->
+        <div class="col-lg-6">
+          <span id="detail-category" class="text-uppercase text-secondary fw-bold small letter-spacing d-block mb-1">Category</span>
+          <h1 id="detail-title" class="display-6 fw-bold mb-3">Product Title</h1>
+
+          <!-- Ratings & Reviews -->
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div id="detail-rating-stars" class="stars"></div>
+            <span id="detail-review-count" class="text-secondary small">(0 reviews)</span>
+          </div>
+
+          <!-- Price Row -->
+          <div class="d-flex align-items-baseline gap-3 mb-4">
+            <span id="detail-price" class="display-6 fw-bold text-dark">$0.00</span>
+            <span id="detail-original-price" class="text-muted text-decoration-line-through fs-5">$0.00</span>
+            <span class="badge bg-danger-subtle text-danger px-2 py-1 rounded-pill small">In Stock</span>
+          </div>
+
+          <!-- Description -->
+          <p id="detail-description" class="text-secondary fs-6 mb-4">
+            Product description will load here dynamically based on the selected fashion piece.
+          </p>
+
+          <hr class="text-secondary-subtle my-4">
+
+          <!-- Size Selector -->
+          <div class="mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <label class="fw-bold text-uppercase small">Select Size:</label>
+              <a href="#" class="small text-decoration-underline text-secondary" data-bs-toggle="modal" data-bs-target="#sizeGuideModal">
+                <i class="bi bi-rulers"></i> Size Guide
+              </a>
+            </div>
+            <div class="d-flex gap-2" id="detail-size-options">
+              <button type="button" class="size-btn active" data-size="S">S</button>
+              <button type="button" class="size-btn" data-size="M">M</button>
+              <button type="button" class="size-btn" data-size="L">L</button>
+              <button type="button" class="size-btn" data-size="XL">XL</button>
+            </div>
+          </div>
+
+          <!-- Quantity Stepper & Add to Bag -->
+          <div class="mb-4">
+            <label class="fw-bold text-uppercase small d-block mb-2">Quantity:</label>
+            <div class="d-flex flex-wrap align-items-center gap-3">
+              <div class="qty-stepper">
+                <button type="button" class="qty-btn" id="btn-qty-minus" aria-label="Decrease quantity">-</button>
+                <input type="text" id="detail-quantity-input" class="qty-input" value="1" readonly>
+                <button type="button" class="qty-btn" id="btn-qty-plus" aria-label="Increase quantity">+</button>
+              </div>
+
+              <button type="button" id="btn-detail-add-to-cart" class="btn btn-zelora flex-grow-1">
+                <i class="bi bi-bag-plus"></i> Add to Bag
+              </button>
+
+              <button type="button" id="btn-detail-buy-now" class="btn btn-zelora-pink">
+                Buy Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Shipping Perks Mini Bar -->
+          <div class="bg-white p-3 rounded-2 border d-flex justify-content-around text-center small text-secondary mb-4">
+            <div><i class="bi bi-truck text-dark me-1"></i> Complimentary Express Delivery</div>
+            <div class="border-start ps-3"><i class="bi bi-arrow-return-left text-dark me-1"></i> 30-Day Hassle-Free Returns</div>
+          </div>
+
+          <!-- Accordion Details -->
+          <div class="accordion zelora-accordion" id="productDetailAccordion">
+            <!-- Item 1: Fabric & Care -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFabric">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFabric" aria-expanded="true" aria-controls="collapseFabric">
+                  Fabric & Sustainability
+                </button>
+              </h2>
+              <div id="collapseFabric" class="accordion-collapse collapse show" aria-labelledby="headingFabric" data-bs-parent="#productDetailAccordion">
+                <div class="accordion-body">
+                  <span id="detail-fabric">100% Certified Organic Fabrics. Crafted with gentle low-impact natural dyes.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2: Shipping & Returns -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingShipping">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseShipping" aria-expanded="false" aria-controls="collapseShipping">
+                  Shipping & Complimentary Returns
+                </button>
+              </h2>
+              <div id="collapseShipping" class="accordion-collapse collapse" aria-labelledby="headingShipping" data-bs-parent="#productDetailAccordion">
+                <div class="accordion-body">
+                  Orders placed before 2:00 PM EST ship same-day. Delivered within 2-4 business days with carbon-neutral courier partners. Returns are complimentary within 30 days of receipt in original packaging.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Products Section -->
+      <div class="mt-5 pt-5 border-top">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+          <div>
+            <span class="text-uppercase text-secondary fw-semibold small">Complete The Look</span>
+            <h2 class="display-6 fw-bold mt-1">You May Also Admire</h2>
+          </div>
+          <a href="shop.html" class="btn btn-zelora-outline">
+            Browse All <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+        <div class="row" id="related-products-container">
+          <!-- Populated by script.js -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Size Guide Modal -->
+  <div class="modal fade" id="sizeGuideModal" tabindex="-1" aria-labelledby="sizeGuideModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title font-serif fw-bold" id="sizeGuideModalLabel">ZELORA Universal Size Guide</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <p class="small text-secondary mb-3">All garments are cut true to standard European & American sizing. If between sizes, we suggest taking the next size up for a relaxed silhouette.</p>
+          <div class="table-responsive">
+            <table class="table table-bordered text-center small align-middle">
+              <thead class="table-light">
+                <tr>
+                  <th>Size</th>
+                  <th>Bust (in)</th>
+                  <th>Waist (in)</th>
+                  <th>Hips (in)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>S</strong></td>
+                  <td>32 - 34</td>
+                  <td>25 - 27</td>
+                  <td>35 - 37</td>
+                </tr>
+                <tr>
+                  <td><strong>M</strong></td>
+                  <td>35 - 37</td>
+                  <td>28 - 30</td>
+                  <td>38 - 40</td>
+                </tr>
+                <tr>
+                  <td><strong>L</strong></td>
+                  <td>38 - 40</td>
+                  <td>31 - 33</td>
+                  <td>41 - 43</td>
+                </tr>
+                <tr>
+                  <td><strong>XL</strong></td>
+                  <td>41 - 44</td>
+                  <td>34 - 37</td>
+                  <td>44 - 47</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Professional Footer -->
+  <footer class="footer-zelora">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="footer-brand">
+            ZELORA<span>.</span>
+          </a>
+          <p class="footer-desc">
+            ZELORA is an elevated contemporary fashion boutique dedicated to timeless aesthetics, artisanal craftsmanship, and conscious luxury for modern lifestyles.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Catalog</a></li>
+            <li><a href="about.html">About ZELORA</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="cart.html">Shopping Bag</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Categories</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=women">Women</a></li>
+            <li><a href="shop.html?category=men">Men</a></li>
+            <li><a href="shop.html?category=dresses">Dresses</a></li>
+            <li><a href="shop.html?category=tops">Tops</a></li>
+            <li><a href="shop.html?category=jeans">Jeans</a></li>
+            <li><a href="shop.html?category=accessories">Accessories</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-heading">Customer Care</h5>
+          <p class="text-secondary small mb-3">
+            Flagship Studio: 742 Fifth Avenue, New York, NY<br>
+            Email: care@zelorafashion.com<br>
+            Toll-Free: +1 (800) 555-ZELO
+          </p>
+          <div class="pt-2">
+            <span class="badge bg-dark border border-secondary p-2 me-1">VISA</span>
+            <span class="badge bg-dark border border-secondary p-2 me-1">MASTERCARD</span>
+            <span class="badge bg-dark border border-secondary p-2 me-1">APPLE PAY</span>
+            <span class="badge bg-dark border border-secondary p-2">PAYPAL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 ZELORA Fashion Store. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="zelora-toast-container" class="zelora-toast-container"></div>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core Store JS -->
+  <script src="script.js"></script>
+</body>
+</html>

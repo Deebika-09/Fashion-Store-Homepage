@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZELORA | Discover Your Style - Luxury Fashion & Contemporary Apparel</title>
+  <meta name="description" content="Welcome to ZELORA Fashion Store. Explore timeless modern apparel, luxury tailoring, curated dresses, tops, denim, and designer accessories.">
+  
+  <!-- Google Fonts (Playfair Display & Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar text-center">
+    <div class="container">
+      <span>Complimentary Worldwide Express Delivery on orders over $100 &bull; Use Code: <a href="shop.html">ZELORA10</a></span>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-zelora">
+      <div class="container">
+        <!-- Logo / Brand Name -->
+        <a class="navbar-brand" href="index.html">
+          ZELORA<span class="brand-dot"></span>
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarZelora" aria-controls="navbarZelora" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2 text-dark"></i>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarZelora">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu border-0 shadow-sm rounded-3 py-2" aria-labelledby="categoriesDropdown">
+                <li><a class="dropdown-item py-2" href="shop.html?category=women">Women's Collection</a></li>
+                <li><a class="dropdown-item py-2" href="shop.html?category=men">Men's Tailoring</a></li>
+                <li><a class="dropdown-item py-2" href="shop.html?category=dresses">Designer Dresses</a></li>
+                <li><a class="dropdown-item py-2" href="shop.html?category=tops">Luxury Tops</a></li>
+                <li><a class="dropdown-item py-2" href="shop.html?category=jeans">Premium Denim</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item py-2" href="shop.html?category=accessories">Artisan Accessories</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Nav Icons: Search & Cart -->
+          <div class="d-flex align-items-center gap-2">
+            <!-- Search Toggle -->
+            <button class="nav-icon-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navSearchCollapse" aria-expanded="false" title="Search catalog">
+              <i class="bi bi-search"></i>
+            </button>
+            
+            <!-- Shopping Cart Icon -->
+            <a href="cart.html" class="nav-icon-btn" title="View Bag">
+              <i class="bi bi-bag"></i>
+              <span class="cart-badge-count" style="display: none;">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Expandable Search Bar -->
+    <div class="collapse nav-search-collapse" id="navSearchCollapse">
+      <div class="container">
+        <form class="nav-search-form d-flex max-w-lg mx-auto" style="max-width: 600px;">
+          <input class="form-control rounded-pill me-2 px-4 py-2 border-secondary-subtle" type="search" placeholder="Search silk dresses, jackets, denim..." aria-label="Search">
+          <button class="btn btn-zelora rounded-pill px-4" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-bg-accent"></div>
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="hero-subtitle">Autumn / Winter 2026 Collection</span>
+          <h1 class="hero-title">Discover <em>Your Style</em> With Effortless Elegance</h1>
+          <p class="hero-description">
+            Welcome to ZELORA. We curate timeless silhouettes, mindful tailoring, and sustainable luxury textiles crafted to empower your authentic expression every day.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="shop.html" class="btn btn-zelora">
+              Shop Now <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="#categories-section" class="btn btn-zelora-outline">
+              Explore Categories
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1200&auto=format&fit=crop&q=85" alt="ZELORA High Fashion Autumn Model" class="hero-img-main">
+            <div class="hero-floating-card">
+              <div class="value-icon mb-0" style="width: 42px; height: 42px; font-size: 1.2rem;">
+                <i class="bi bi-gem"></i>
+              </div>
+              <div>
+                <h6 class="mb-0 fw-bold">Pure Silk & Cashmere</h6>
+                <small class="text-muted">Handcrafted Sustainable Luxury</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section id="categories-section" class="py-5 my-4">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-uppercase text-secondary fw-semibold small letter-spacing">Curated Collections</span>
+        <h2 class="display-6 fw-bold mt-2">Shop by Category</h2>
+        <p class="text-muted mx-auto" style="max-width: 540px;">Explore handpicked apparel and artisan accessories tailored for every occasion.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Women -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="shop.html?category=women" class="category-card">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600&auto=format&fit=crop&q=80" alt="Women's Fashion">
+            <div class="category-overlay">
+              <h5 class="category-title">Women</h5>
+              <span class="category-count">Explore</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- 2. Men -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="shop.html?category=men" class="category-card">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=600&auto=format&fit=crop&q=80" alt="Men's Fashion">
+            <div class="category-overlay">
+              <h5 class="category-title">Men</h5>
+              <span class="category-count">Explore</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- 3. Dresses -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="shop.html?category=dresses" class="category-card">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&auto=format&fit=crop&q=80" alt="Dresses">
+            <div class="category-overlay">
+              <h5 class="category-title">Dresses</h5>
+              <span class="category-count">Explore</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- 4. Tops -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="shop.html?category=tops" class="category-card">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600&auto=format&fit=crop&q=80" alt="Tops & Blouses">
+            <div class="category-overlay">
+              <h5 class="category-title">Tops</h5>
+              <span class="category-count">Explore</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- 5. Jeans -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="shop.html?category=jeans" class="category-card">
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=600&auto=format&fit=crop&q=80" alt="Jeans & Denim">
+            <div class="category-overlay">
+              <h5 class="category-title">Jeans</h5>
+              <span class="category-count">Explore</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- 6. Accessories -->
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="shop.html?category=accessories" class="category-card">
+            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&auto=format&fit=crop&q=80" alt="Accessories & Bags">
+            <div class="category-overlay">
+              <h5 class="category-title">Accessories</h5>
+              <span class="category-count">Explore</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-end justify-content-between mb-4">
+        <div>
+          <span class="text-uppercase text-secondary fw-semibold small">Seasonal Highlights</span>
+          <h2 class="display-6 fw-bold mt-1">Featured Products</h2>
+        </div>
+        <a href="shop.html" class="btn btn-zelora-outline mt-2 mt-sm-0">
+          View All Products <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Dynamic Featured Container (populated by script.js) -->
+      <div class="row" id="featured-products-container">
+        <!-- Injected dynamically via script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Promotional Banner Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="promo-banner">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <span class="promo-badge">Limited Time Offer</span>
+            <h2>Mid-Season Luxe Sale Up to 40% Off</h2>
+            <p class="text-light opacity-75 fs-5 mb-4">
+              Revitalize your wardrobe with signature Italian silks, structured blazers, and organic denim before stock runs out.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="shop.html" class="btn btn-zelora-pink">
+                Shop The Sale <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="about.html" class="btn btn-outline-light rounded-2 px-4 py-2 text-uppercase fs-6 fw-semibold">
+                Our Story
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center d-none d-lg-block">
+            <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?w=700&auto=format&fit=crop&q=80" alt="Promotional Fashion Model" class="rounded-4 shadow-lg mx-auto" style="max-height: 380px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Value Props -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="bi bi-truck"></i>
+            </div>
+            <h5>Express Shipping</h5>
+            <p>Free standard & express shipping on all orders over $100 worldwide.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="bi bi-arrow-repeat"></i>
+            </div>
+            <h5>30-Day Easy Returns</h5>
+            <p>Shop with confidence with our seamless return and exchange guarantee.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <h5>Sustainable Fabrics</h5>
+            <p>100% certified organic cotton, recycled fibers, and ethical production.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="bi bi-headset"></i>
+            </div>
+            <h5>24/7 Dedicated Care</h5>
+            <p>Our personal styling & concierge team is here to assist anytime.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Subscription Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="newsletter-section text-center">
+        <span class="text-uppercase fw-bold text-dark small letter-spacing">Stay In Vogue</span>
+        <h2 class="display-6 fw-bold mt-1 mb-3">Join the ZELORA Society</h2>
+        <p class="text-secondary mx-auto mb-4" style="max-width: 520px;">
+          Be the first to preview exclusive private runway sales, seasonal lookbooks, and receive 10% off your inaugural order.
+        </p>
+        <form class="newsletter-form">
+          <div class="newsletter-input-group">
+            <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Footer -->
+  <footer class="footer-zelora">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <a href="index.html" class="footer-brand">
+            ZELORA<span>.</span>
+          </a>
+          <p class="footer-desc">
+            ZELORA is an elevated contemporary fashion boutique dedicated to timeless aesthetics, artisanal craftsmanship, and conscious luxury for modern lifestyles.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop Catalog</a></li>
+            <li><a href="about.html">About ZELORA</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="cart.html">Shopping Bag</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Shop Categories -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="footer-heading">Categories</h5>
+          <ul class="footer-links">
+            <li><a href="shop.html?category=women">Women</a></li>
+            <li><a href="shop.html?category=men">Men</a></li>
+            <li><a href="shop.html?category=dresses">Dresses</a></li>
+            <li><a href="shop.html?category=tops">Tops</a></li>
+            <li><a href="shop.html?category=jeans">Jeans</a></li>
+            <li><a href="shop.html?category=accessories">Accessories</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter in Footer -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="footer-heading">Customer Care</h5>
+          <p class="text-secondary small mb-3">
+            Flagship Studio: 742 Fifth Avenue, New York, NY<br>
+            Email: care@zelorafashion.com<br>
+            Toll-Free: +1 (800) 555-ZELO
+          </p>
+          <div class="pt-2">
+            <span class="badge bg-dark border border-secondary p-2 me-1">VISA</span>
+            <span class="badge bg-dark border border-secondary p-2 me-1">MASTERCARD</span>
+            <span class="badge bg-dark border border-secondary p-2 me-1">APPLE PAY</span>
+            <span class="badge bg-dark border border-secondary p-2">PAYPAL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 ZELORA Fashion Store. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="zelora-toast-container" class="zelora-toast-container"></div>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core Store JS -->
+  <script src="script.js"></script>
+</body>
+</html>
